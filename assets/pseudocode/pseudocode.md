@@ -78,9 +78,9 @@ START
 
 #### Make second API request to display UV Index for current weather. 
 
-### Make third API request to populate weather data for 5-day forecast.
+#### Make third API request to populate weather data for 5-day forecast.
 
-### Save user entries to local storage for future retrieval.
+#### Save user entries to local storage for future retrieval.
 
-### Create button event handlers for program functionality.
+#### Create button event handlers for program functionality.
 
