@@ -89,7 +89,7 @@ Put back split array entries to display full, continuous city name by using .joi
 Append child element of capitalized city name to parent element
 ``` 
 
-#### Create populateCityWeather function to retrieve data from Open Weather Map and display current weather as well as 5-day forecast. Function will continue until last step 
+#### Create addCityWeather function to retrieve data from Open Weather Map and display current weather as well as 5-day forecast. Function will continue until last step 
 ```
 Run createCityList function
 
