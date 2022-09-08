@@ -89,9 +89,27 @@ Put back split array entries to display full, continuous city name by using .joi
 Append child element of capitalized city name to parent element
 ``` 
 
-#### Create populateCityWeather function to retrieve data from Open Weather Map and display current weather as well as 5-day forecast. 
+#### Create populateCityWeather function to retrieve data from Open Weather Map and display current weather as well as 5-day forecast. Function will continue until last step 
+```
+Run createCityList function
+
+Initialize query variables with URL parameters required for current weather and 5-day forecast
+
+Declare longitude and latitude variables for future iteration
+``` 
 
 #### Make first API request and use Moment.js library to populate dashboard with date and weather data for current weather. 
+```
+Make first api request using current weather URL parameter
+
+Use Moment.js library to populate current weather section of dashboard with current date
+
+Create weather icon to display next to current weather section of dashboard
+
+Make .empty() function call to dynamically update icon 
+
+Display current date's weather information (temperature, humidity, wind)
+```
 
 #### Make second API request to display UV Index for current weather. 
 
