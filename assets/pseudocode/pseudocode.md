@@ -71,6 +71,23 @@ START
 ```
 
 #### Make createCityList function to use for recording user search history on dashboard.
+```
+function createCityList(cityList)
+
+Use .empty() method to avoid duplicate city name storage 
+
+Store user-input object in variable cityName
+
+For each city entry, add bootstrap class to properly display entry below search bar
+
+Use .split() method to take city name and split into separate words
+
+For each word in city name, index in first letter and capitalize. 
+
+Put back split array entries to display full, continuous city name by using .join() method
+
+Append child element of capitalized city name to parent element
+``` 
 
 #### Create populateCityWeather function to retrieve data from Open Weather Map and display current weather as well as 5-day forecast. 
 
