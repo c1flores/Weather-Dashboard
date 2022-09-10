@@ -36,6 +36,7 @@ function addCityWeather(city, cityList) {
   var longitude;
   var latitude;
 
+  //first API request to modify data so that current weather is shown on dashboard
   $.ajax({
     url: currentQuery,
     method: "GET"
@@ -82,8 +83,73 @@ function addCityWeather(city, cityList) {
     latitude +
     "&lon=" +
     longitude;
+    
+    //second API request to modify data so that uv index is displayed for current weather on dashboard
+    $.ajax({
+      url: cityQuery,
+      method:"GET"
+    })
 
-  })
+    .then(function(uvIndex) {
+      console.log(uvIndex);
+
+      //create button to display uv index severity. Setting as "red" by default since summer time typically trends with a high sun intensity.
+      var uvIndexDisplay = $("<button>");
+      uvIndexDisplay.addClass("btn btn-danger");
+
+      //find specific uv index value 
+      $("current-uv").text("UV Index: ");
+      $("current-uv").append(uvIndexDisplay.text(uvIndex[0].value));
+      console.log(uvIndex[0].value);
+
+      //third API request to modify data so that forecast is displayed for five consecutive days
+      $.ajax({
+        url: forecastQuery,
+        method:"GET"
+      })
+
+      .then(function(forecast) {
+
+        console.log(forecastQuery);
+
+        console.log(forecast);
+
+        //loop through the forecast list array to show a single forecast entry & time. The API used in this query provides weather data at 3-hour increments. 
+        for (var i = 6; i< forecast.list.length; i += 8) {
+
+          //create element to display date
+          var forecastDate = $("<h5>");
+
+          //use loop interval to provide an index so that days are placed in correct order
+          var forecastPlacement = (i + 2) / 8;
+
+          console.log("#forecast-date" + forecastPlacement);
+
+          //add date to forecast cards
+          $("forecast-date" + forecastPlacement).empty();
+          $("forecast-date" + forecastPlacement).append(forecastDate.text(currentDate.add(1, "days").format("M/D/YYYY")));
+
+          //create element to populate with appropriate weather icon
+          var forecastSymbol = $("<img>");
+
+          forecastSymbol.attr("src", "https://openweathermap.org/img/w" + forecast.list[i].weather[0].icon + ".png");
+
+          //adding appropriate weather icon
+          $("forecast-icon" + forecastPlacement).empty();
+          $("forecast-icon" + forecastPlacement).append(forecastSymbol);
+
+          console.log(forecast.list[i].weather[0].icon);
+          
+          //setting relevant data to each forecast card
+          $("#forecast-temp" + forecastPlacement).text("Temp: "+ forecast.list[i].main.temp + " °F");
+          $("#forecast-Humidity" + forecastPlacement).text("Humidity: "+ forecast.list[i].main.humidity + " %");
+
+          $(".forecast").attr("style", "background-color:dodgerblue; color:white");
+
+        }
+      });
+    });
+  });
 }
 
 
