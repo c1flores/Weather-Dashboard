@@ -110,8 +110,20 @@ Make .empty() function call to dynamically update icon
 
 Display current date's weather information (temperature, humidity, wind)
 ```
+#### Set values for longitude and latitude variables with appropriate values & create another URL parameter to display UV Index data. 
+```
+Initialize longitude and latitude variables for proper functionality
 
+Create URL parameter for UV index
+```
 #### Make second API request to display UV Index for current weather. 
+```
+Make second API request using uvQUERY parameter
+
+Use jQuery to add button to indicate sun intensity 
+
+Find and set specific UV index value
+```
 
 #### Make third API request to populate weather data for 5-day forecast.
 

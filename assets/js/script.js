@@ -78,7 +78,7 @@ function addCityWeather(city, cityList) {
 
     
     //query to be used for displaying UV index on dashboard
-    var cityQuery = "https://api.openweathermap.org/data/2.5/uvi/forecast?&units=imperial&appid=b2ec79033d3c438cc2e35b50d25dac5d&q=" +
+    var uvQuery = "https://api.openweathermap.org/data/2.5/uvi/forecast?&units=imperial&appid=b2ec79033d3c438cc2e35b50d25dac5d&q=" +
     "&lat=" +
     latitude +
     "&lon=" +
@@ -86,7 +86,7 @@ function addCityWeather(city, cityList) {
     
     //second API request to modify data so that uv index is displayed for current weather on dashboard
     $.ajax({
-      url: cityQuery,
+      url: uvQuery,
       method:"GET"
     })
 
