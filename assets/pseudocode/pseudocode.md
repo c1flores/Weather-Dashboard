@@ -135,7 +135,22 @@ Create forecastPlacement variable to display cards in correct order
 
 Add card information (date, icon, temp, and humidity)
 ```
-#### Save user entries to local storage for future retrieval.
 
 #### Create button event handlers for program functionality.
+```
+Create state of readiness event upon DOM load
+
+Retrieve local storage item. If empty, run createCityList function.
+
+Add event handler for search button
+
+Read user-input and save item in local storage
+
+Run main addCityWeather function and use .show() method so current weather and forecast weather displays on screen
+
+Add event handler for interaction with previous search history list
+
+Run main addCityWeather function and use .show() method so current weather and forecast weather displays on screen
+```
+
 
