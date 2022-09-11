@@ -160,7 +160,7 @@ function addCityWeather(city, cityList) {
 
           $(".forecast").attr(
             "style",
-            "background-color:dodgerblue; color:white"
+            "background-color: #0047AB; color:white"
           );
         }
       });
