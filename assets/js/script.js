@@ -43,9 +43,8 @@ function addCityWeather(city, cityList) {
   //first API request to modify data so that current weather is shown on dashboard
   $.ajax({
     url: currentQuery,
-    method: "GET"
-  })
-  .then(function(weather) {
+    method: "GET",
+  }).then(function (weather) {
     console.log(currentQuery);
 
     console.log(weather);
@@ -94,9 +93,8 @@ function addCityWeather(city, cityList) {
     //second API request to modify data so that uv index is displayed for current weather on dashboard
     $.ajax({
       url: uvQuery,
-      method: "GET"
-    })
-    .then(function (uvIndex) {
+      method: "GET",
+    }).then(function (uvIndex) {
       console.log(uvIndex);
 
       //create button to display uv index severity. Setting as "red" by default since summer time typically trends with a high sun intensity.
@@ -111,9 +109,8 @@ function addCityWeather(city, cityList) {
       //third API request to modify data so that forecast is displayed for five consecutive days
       $.ajax({
         url: forecastQuery,
-        method: "GET"
-      })
-      .then(function(forecast) {
+        method: "GET",
+      }).then(function (forecast) {
         console.log(forecastQuery);
 
         console.log(forecast);
@@ -168,6 +165,7 @@ function addCityWeather(city, cityList) {
   });
 }
 
+//ready event after DOM has been loaded
 $(document).ready(function () {
   var cityListString = localStorage.getItem("cityList");
 
@@ -182,7 +180,8 @@ $(document).ready(function () {
   $("#current-weather").hide();
   $("#forecast-weather").hide();
 
-  $("#search-button").on("click", function(event) {
+  //event handler for search results to prompt program functionality
+  $("#search-button").on("click", function (event) {
     event.preventDefault();
 
     var city = $("#city-input").val().trim().toLowerCase();
@@ -199,7 +198,8 @@ $(document).ready(function () {
     }
   });
 
-  $("#city-list").on("click", "button", function(event) {
+  //event handler for choosing previously searched city and populating with respective weather data
+  $("#city-list").on("click", "button", function (event) {
     event.preventDefault();
 
     var city = $(this).text();
