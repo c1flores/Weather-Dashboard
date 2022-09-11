@@ -126,7 +126,15 @@ Find and set specific UV index value
 ```
 
 #### Make third API request to populate weather data for 5-day forecast.
+```
+Make third API request using forecastQuery parameter
 
+Create for loop to show a single entry & time for 5 days
+
+Create forecastPlacement variable to display cards in correct order
+
+Add card information (date, icon, temp, and humidity)
+```
 #### Save user entries to local storage for future retrieval.
 
 #### Create button event handlers for program functionality.
