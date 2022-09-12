@@ -5,7 +5,7 @@ This repository is an exhibition of a weather dashboard. The user can use it to 
 Short-term weather prediction is important for providing information to people so that they can reduce weather-related inconvenience within their daily itinerary. 
 
 ## Live Application
-(to-do)
+[Deployed Application](https://c1flores.github.io/Weather-Dashboard/)
 
 ## Screen Capture
 (to-do)
