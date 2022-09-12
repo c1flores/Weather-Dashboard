@@ -8,4 +8,4 @@ Short-term weather prediction is important for providing information to people s
 [Deployed Application](https://c1flores.github.io/Weather-Dashboard/)
 
 ## Screen Capture
-(to-do)
+![](https://user-images.githubusercontent.com/81927296/189558157-a219b281-58b9-4780-852f-d34817aa79ae.gif)
