@@ -8,7 +8,7 @@
 
 ## Meta-Analysis of Approach
 
-### Big Picture: Create a visual tool for tracking weather in specific locations. 
+### Big Picture: Create a visual tool for tracking weather in specific cities. 
 
 #### Use Bootstrap to create search container element along with empty city-list class to populate with future user entries.
 ```
@@ -148,7 +148,7 @@ Read user-input and save item in local storage
 
 Run main addCityWeather function and use .show() method so current weather and forecast weather displays on screen
 
-Add event handler for interaction with previous search history list
+Add event handler for interaction with search history list
 
 Run main addCityWeather function and use .show() method so current weather and forecast weather displays on screen
 ```
