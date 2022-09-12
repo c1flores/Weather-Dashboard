@@ -97,9 +97,20 @@ function addCityWeather(city, cityList) {
     }).then(function (uvIndex) {
       console.log(uvIndex);
 
-      //create button to display uv index severity. Setting as "red" by default since summer time typically trends with a high sun intensity.
+      //create button to display uv index severity. Conditional statement for granular ranking of severity
       var uvIndexDisplay = $("<button>");
-      uvIndexDisplay.addClass("btn btn-danger");
+      
+      if(uvIndex[0].value > 0 && uvIndex[0].value < 2 ) {
+        uvIndexDisplay.addClass("btn btn-success");
+      }
+
+      else if(uvIndex[0].value > 2 && uvIndex[0].value < 5) {
+        uvIndexDisplay.addClass("btn btn-warning");
+      }
+
+      else {
+        uvIndexDisplay.addClass("btn btn-danger");
+      }
 
       //find specific uv index value
       $("#current-uv").text("UV Index: ");
