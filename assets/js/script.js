@@ -151,6 +151,9 @@ function addCityWeather(city, cityList) {
           $("#forecast-temp" + forecastPlacement).text(
             "Temp: " + forecast.list[i].main.temp + " °F"
           );
+          $("#forecast-wind" + forecastPlacement).text(
+            "Wind Speed: " + (forecast.list[i].wind.speed).toFixed(2) + " MPH"
+          );
           $("#forecast-humidity" + forecastPlacement).text(
             "Humidity: " + forecast.list[i].main.humidity + " %"
           );

@@ -2,7 +2,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-h6 {
+h6, h5 {
   font-weight: bold;
 }
 
@@ -38,8 +38,20 @@ input {
     justify-content: center/space-around/space-between;
 }
 
+#current-temp,
+#current-humidity,
+#current-wind,
+#current-uv  {
+    font-size: 15px;
+}
+
 #forecast-cards {
     display: flex;
     flex-direction: row;
-    justify-content: center/space-between;
+    justify-content: stretch;
 }
+
+.card-text {
+  font-size: 13px;
+}
+
