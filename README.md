@@ -4,9 +4,7 @@ This repository is an exhibition of a weather dashboard. The user can use it to 
 ## Why is tracking weather important?
 Short-term weather prediction is important for providing information to people so that they can reduce weather-related inconvenience within their daily itinerary. 
 
-## Live Application
-[Deployed Application](https://c1flores.github.io/Weather-Dashboard/)
-
+## Technologies Used
 <div style="display: inline_block"><br>
   <img height="40" align="center" alt="Chris-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -22,3 +20,7 @@ Short-term weather prediction is important for providing information to people s
 
 ## Screen Capture
 ![](https://user-images.githubusercontent.com/81927296/189558157-a219b281-58b9-4780-852f-d34817aa79ae.gif)
+
+## Live Application
+[Deployed Application](https://c1flores.github.io/Weather-Dashboard/)
+
