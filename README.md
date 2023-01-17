@@ -1,4 +1,16 @@
 # Weather-Dashboard
+
+
+
+<!-- omit in toc -->
+## Table of Contents
+- [Overview](#overview)
+- [Why is Tracking Weather Important?](#why-is-tracking-weather-important)
+- [Technologies Used](#technologies-used)
+- [Screen Capture](#screen-capture)
+- [Live Application](#live-application)
+
+## Overview
 This repository is an exhibition of a weather dashboard. The user can use it to track important weather information for any city they search for.
 
 ## Why is Tracking Weather Important?
